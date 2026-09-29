@@ -1,4 +1,28 @@
+/****
+COLORS: 
+
+****/
+
+
+[data-theme='slushie'] {
+--color-accent:#f5f1e8; 
+--color-primary: #168cff; 
+--color-red: #e63946; 
+--color-green: #39b54a; 
+--color-yellow: #d9e600;
+--color-brown: #6b3e26; 
+}
+
+body {
+    background: var(--color-accent)
+}
+
+/**** HERO ****/
+/**** HERO ****/
+/**** HERO ****/
+
 .hero-mesh {
-background: url("https://img.magnific.com/premium-photo/colorful-soda-cans-lined-up-against-peach-background-vibrant-aesthetic-beverage-cans-arranged-minimalist-fashion_74054-7874.jpg?w=996");
-background-size: cover; 
+background: url("https://img.magnific.com/premium-photo/colorful-fruity-slushie-drink-plastic-cup-summer-tropical-frozen-juice-cocktail-slush_1131930-17799.jpg?w=2000");
+background-position: center;
+background-size: cover;
 }
