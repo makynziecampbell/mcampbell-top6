@@ -5,19 +5,18 @@ COLORS:
 
 
 [data-theme='flowers'] {
---color-accent: #e96d9b; 
---color-primary: #e1b3ff; 
---color-green: #bad4aa; 
---color-pink: #fde2e4; 
---color-coral: #f877a4;
---color-purple: #d190fc;
---color-yellow: #ffef9f; 
---color-blue: #b6dcfe; 
---color-lavender: #e8d7ff; 
+    --color-accent: #e96d9b;
+    --color-primary:#f0a6ca; 
+    --color-green: #edeec9;
+    --color-coral: #ff477e;
+    --color-purple: #e1b3ff; 
+    --color-yellow: #fae588; 
+    --color-beige: #fefae0; 
+    --color-pink:  #ffacc5; 
 }
 
 body {
-    background: var(--color-coral)
+    background: var(--color-beige);
 }
 
 
@@ -26,31 +25,32 @@ body {
 /**** HERO ****/
 
 .hero-title {
-color: var(--color-purple);
-text-shadow: 2px 2px 10px white;
+    color: var(--color-coral);
+    text-shadow: 2px 2px 10px black; 
 
 }
 
 .hero-support {
-    color: var(--color-white);
+    color: var(--color-yellow);
     font-weight: 800;
-    text-shadow: 1px 1px 3px white; 
+    text-shadow: 1px 1px 3px black;
 }
 
 .hero-mesh {
-background: url("https://cdn.wallpapersafari.com/44/67/BGHMot.jpg");
-background-position: center;
-background-size: cover;
+    background: url("https://cdn.wallpapersafari.com/44/67/BGHMot.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
-/**** NAVBAR ****/ 
-/**** NAVBAR ****/ 
-/**** NAVBAR ****/ 
+/**** NAVBAR ****/
+/**** NAVBAR ****/
+/**** NAVBAR ****/
 
 .site-nav-brand {
-    color-var (--color-primary);
-    .is-nav-ready .site-nav.is-stuck {
+    color: var(--color-pink);
+}
+
+.is-nav-ready .site-nav.is-stuck {
     background: color-mix(in oklab, var(--color-base-100) 88%, transparent);
     backdrop-filter: blur(10px);
-}
 }
