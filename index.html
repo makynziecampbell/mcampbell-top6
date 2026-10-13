@@ -1,223 +1,296 @@
 <!doctype html>
 <html lang="en" data-theme="flowers">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Top 6 — change this to your subject</title>
-    <meta name="description" content="One sentence about this list. Search results show it; write it." />
 
-    <!-- Tailwind and daisyUI, no build step. Open this file with Live Server.
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top 6 — change this to your subject</title>
+  <meta name="description" content="One sentence about this list. Search results show it; write it." />
+
+  <!-- Tailwind and daisyUI, no build step. Open this file with Live Server.
          Tailwind's browser build is for development only; Unit 8 replaces it. -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- The tab icon. Redraw img/favicon.svg in your own colors. -->
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-    <!-- Your own rules go last, so they win. -->
-    <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="custom.css" />
-  </head>
+  <!-- The tab icon. Redraw img/favicon.svg in your own colors. -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <!-- Your own rules go last, so they win. -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
 
-  <body class="bg-base-100 text-base-content">
-    <!-- THEME: change data-theme on <html> first. Try synthwave, forest,
+<body class="bg-base-100 text-base-content">
+  <!-- THEME: change data-theme on <html> first. Try synthwave, forest,
          cupcake, dracula, nord, autumn, lofi, night. All 35 are at
          daisyui.com/docs/themes. -->
 
-    <a class="skip" href="#list">Skip to the list</a>
+  <a class="skip" href="#list">Skip to the list</a>
 
-    <nav class="site-nav" data-nav>
-      <div class="site-nav-inner">
-        <a class="site-nav-brand" href="#top">Top 6 Pink Flowers</a>
-        <div class="site-nav-links">
-          <a href="#list">The list</a>
-          <a href="#method">Method</a>
-          <a class="btn btn-primary btn-sm" href="#one">Number one</a>
-        </div>
+  <nav class="site-nav" data-nav>
+    <div class="site-nav-inner">
+      <a class="site-nav-brand" href="#top">Top 6 Pink Flowers</a>
+      <div class="site-nav-links">
+        <a href="#list">The list</a>
+        <a href="#method">Method</a>
+        <a class="btn btn-primary btn-sm" href="#one">Number one</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- THE HERO: one headline, one line of support, one button. -->
-    <header class="hero-stage" id="top">
-      <div class="hero-mesh" aria-hidden="true"></div>
+  <!-- THE HERO: one headline, one line of support, one button. -->
+  <header class="hero-stage" id="top">
+    <div class="hero-mesh" aria-hidden="true"></div>
 
-      <div class="hero-body">
-        <h1 class="hero-title">
-          The six best <span class="hero-mark">pink flowers</span>
-        </h1>
-        <p class="hero-support">
-          One sentence saying why you are the person to write this list. Real
-          credentials only — "I have eaten all of them twice" is a real one.
-        </p>
-        <a class="btn btn-primary btn-lg" href="#list">Bloom!</a>
-      </div>
+    <div class="hero-body">
+      <h1 class="hero-title">
+        The six best <span class="hero-mark">pink flowers</span>
+      </h1>
+      <p class="hero-support">
+        One sentence saying why you are the person to write this list. Real
+        credentials only — "I have eaten all of them twice" is a real one.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#list">Bloom!</a>
+    </div>
 
-      <a class="hero-cue" href="#list" aria-hidden="true" tabindex="-1">
-        <span class="hero-cue-dot"></span>
-      </a>
+    <a class="hero-cue" href="#list" aria-hidden="true" tabindex="-1">
+      <span class="hero-cue-dot"></span>
+    </a>
+  </header>
+
+  <main id="list" class="list-wrap">
+    <header class="list-head" data-reveal>
+      <p class="eyebrow">The countdown</p>
+      <h2 class="section-title">Six of them, worst to best</h2>
+      <p class="section-support">
+        One sentence on what these six have in common — the thing that made
+        them eligible at all.
+      </p>
     </header>
 
-    <main id="list" class="list-wrap">
-      <header class="list-head" data-reveal>
-        <p class="eyebrow">The countdown</p>
-        <h2 class="section-title">Six of them, worst to best</h2>
-        <p class="section-support">
-          One sentence on what these six have in common — the thing that made
-          them eligible at all.
-        </p>
-      </header>
-
-      <ol class="list-grid">
-        <!-- ONE ENTRY. Keep all six parallel: if one has two sentences, they all
+    <ol class="list-grid">
+      <!-- ONE ENTRY. Keep all six parallel: if one has two sentences, they all
              do. Change the shape of one, then copy it over the other five. -->
-        <li class="entry" data-reveal>
-          <article class="entry-card">
-            <!-- YOUR PHOTO: put it in img/, change src and alt, and credit it
+      <li class="entry" data-reveal>
+        <article class="entry-card">
+          <!-- YOUR PHOTO: put it in img/, change src and alt, and credit it
                  in the footer. alt says what the picture shows. -->
-            <figure class="shot">
-              <img src="img/1.jpg" width="900" height="675" loading="lazy" alt="A Saturn V rocket clearing the launch tower in fire and smoke, seen from above" />
-              <figcaption class="shot-cap">A caption you would say out loud</figcaption>
-            </figure>
+          <figure class="shot">
+            <img src="img/1.jpg" width="900" height="675" loading="lazy"
+              alt="A Saturn V rocket clearing the launch tower in fire and smoke, seen from above" />
+            <figcaption class="shot-cap">A caption you would say out loud</figcaption>
+          </figure>
 
-            <div class="entry-body">
-              <span class="rank" aria-hidden="true">06</span>
-              <h3 class="entry-title"><span class="sr-only">Number six: </span>Tulips</h3>
-              <p class="entry-note">Their cup-shaped blooms have a simple and clean appearance. Their upright stems also give them a distinct sape comepared to other flowers </p>
-            </div>
-          </article>
-        </li>
+          <div class="entry-body">
+            <span class="rank" aria-hidden="true">06</span>
+            <h3 class="entry-title"><span class="sr-only">Number six: </span>Tulips</h3>
+            <p class="entry-note">Their cup-shaped blooms have a simple and clean appearance. Their upright stems also
+              give them a distinct sape comepared to other flowers </p>
+          </div>
+        </article>
+      </li>
 
-        <li class="entry" data-reveal>
-          <article class="entry-card">
-            <figure class="shot">
-              <img src="img/2.jpg" width="900" height="675" loading="lazy" alt="An astronaut on a gold tether floating outside his spacecraft, the Earth's edge behind him" />
-              <figcaption class="shot-cap">A caption you would say out loud</figcaption>
-            </figure>
-            <div class="entry-body">
-              <span class="rank" aria-hidden="true">05</span>
-              <h3 class="entry-title"><span class="sr-only">Number five: </span>Peonies</h3>
-              <p class="entry-note">Their numerous overlapping petals make them look especially full and fluffy. Their rounded shape gives them a soft and romantic appearance.
-            </div>
-          </article>
-        </li>
+      <li class="entry" data-reveal>
+        <article class="entry-card">
+          <figure class="shot">
+            <img src="img/2.jpg" width="900" height="675" loading="lazy"
+              alt="An astronaut on a gold tether floating outside his spacecraft, the Earth's edge behind him" />
+            <figcaption class="shot-cap">A caption you would say out loud</figcaption>
+          </figure>
+          <div class="entry-body">
+            <span class="rank" aria-hidden="true">05</span>
+            <h3 class="entry-title"><span class="sr-only">Number five: </span>Peonies</h3>
+            <p class="entry-note">Their numerous overlapping petals make them look especially full and fluffy. Their
+              rounded shape gives them a soft and romantic appearance.
+          </div>
+        </article>
+      </li>
 
-        <li class="entry" data-reveal>
-          <article class="entry-card">
-            <figure class="shot">
-              <img src="img/3.jpg" width="900" height="675" loading="lazy" alt="An astronaut in a jet-powered backpack flying free above a blue, cloud-covered Earth" />
-              <figcaption class="shot-cap">A caption you would say out loud</figcaption>
-            </figure>
-            <div class="entry-body">
-              <span class="rank" aria-hidden="true">04</span>
-              <h3 class="entry-title"><span class="sr-only">Number four: </span>Pink Roses</h3>
-              <p class="entry-note">Their layered petals create a classic and recognizable flower shape. The pink shade gives them a softer look than the dark roses. </p>
-            </div>
-          </article>
-        </li>
+      <li class="entry" data-reveal>
+        <article class="entry-card">
+          <figure class="shot">
+            <img src="img/3.jpg" width="900" height="675" loading="lazy"
+              alt="An astronaut in a jet-powered backpack flying free above a blue, cloud-covered Earth" />
+            <figcaption class="shot-cap">A caption you would say out loud</figcaption>
+          </figure>
+          <div class="entry-body">
+            <span class="rank" aria-hidden="true">04</span>
+            <h3 class="entry-title"><span class="sr-only">Number four: </span>Pink Roses</h3>
+            <p class="entry-note">Their layered petals create a classic and recognizable flower shape. The pink shade
+              gives them a softer look than the dark roses. </p>
+          </div>
+        </article>
+      </li>
 
-        <li class="entry" data-reveal>
-          <article class="entry-card">
-            <figure class="shot">
-              <img src="img/4.jpg" width="900" height="675" loading="lazy" alt="An astronaut standing on the gray lunar surface, the photographer reflected in his visor" />
-              <figcaption class="shot-cap">A caption you would say out loud</figcaption>
-            </figure>
-            <div class="entry-body">
-              <span class="rank" aria-hidden="true">03</span>
-              <h3 class="entry-title"><span class="sr-only">Number three: </span>Hydrengeas</h3>
-              <p class="entry-note">Their clusters of tiny flowers make ech bloom look large and full. They are especially noticeable because of their round shape.</p>
-            </div>
-          </article>
-        </li>
+      <li class="entry" data-reveal>
+        <article class="entry-card">
+          <figure class="shot">
+            <img src="img/4.jpg" width="900" height="675" loading="lazy"
+              alt="An astronaut standing on the gray lunar surface, the photographer reflected in his visor" />
+            <figcaption class="shot-cap">A caption you would say out loud</figcaption>
+          </figure>
+          <div class="entry-body">
+            <span class="rank" aria-hidden="true">03</span>
+            <h3 class="entry-title"><span class="sr-only">Number three: </span>Hydrengeas</h3>
+            <p class="entry-note">Their clusters of tiny flowers make ech bloom look large and full. They are especially
+              noticeable because of their round shape.</p>
+          </div>
+        </article>
+      </li>
 
-        <li class="entry" data-reveal>
-          <article class="entry-card">
-            <figure class="shot">
-              <img src="img/5.jpg" width="900" height="675" loading="lazy" alt="The whole Earth, fully lit, with Africa and Antarctica under swirling white cloud" />
-              <figcaption class="shot-cap">A caption you would say out loud</figcaption>
-            </figure>
-            <div class="entry-body">
-              <span class="rank" aria-hidden="true">02</span>
-              <h3 class="entry-title"><span class="sr-only">Number two: </span>Sweet Peas</h3>
-              <p class="entry-note">Their thin, curved petals give them a light and delicate appearance. They also have a natural, almost whimsical look. </p>
-            </div>
-          </article>
-        </li>
+      <li class="entry" data-reveal>
+        <article class="entry-card">
+          <figure class="shot">
+            <img src="img/5.jpg" width="900" height="675" loading="lazy"
+              alt="The whole Earth, fully lit, with Africa and Antarctica under swirling white cloud" />
+            <figcaption class="shot-cap">A caption you would say out loud</figcaption>
+          </figure>
+          <div class="entry-body">
+            <span class="rank" aria-hidden="true">02</span>
+            <h3 class="entry-title"><span class="sr-only">Number two: </span>Sweet Peas</h3>
+            <p class="entry-note">Their thin, curved petals give them a light and delicate appearance. They also have a
+              natural, almost whimsical look. </p>
+          </div>
+        </article>
+      </li>
 
-        <!-- NUMBER ONE is the one exception: full width, photo beside the words,
+      <!-- NUMBER ONE is the one exception: full width, photo beside the words,
              the primary color. data-count-from makes its numeral count down to
              01 as it arrives; delete the attribute to turn that off. -->
-        <li class="entry entry-one" id="one" data-reveal>
-          <article class="entry-card">
-            <figure class="shot">
-              <img src="img/6.jpg" width="900" height="675" loading="lazy" alt="The Earth, half lit, rising over the gray horizon of the Moon" />
-              <figcaption class="shot-cap">A caption you would say out loud</figcaption>
-            </figure>
-            <div class="entry-body">
-              <span class="rank" aria-hidden="true" data-count-from="6">01</span>
-              <p class="eyebrow">The best one</p>
-              <h3 class="entry-title"><span class="sr-only">Number one: </span>Pink Carnations</h3>
-              <p class="entry-note">
-              Their ruffled petals give them a unique and detailed appearance. The soft pink color also makes them look delicate and elegant. 
-              </p>
-            </div>
-          </article>
-        </li>
-      </ol>
-    </main>
+      <li class="entry entry-one" id="one" data-reveal>
+        <article class="entry-card">
+          <figure class="shot">
+            <img src="img/6.jpg" width="900" height="675" loading="lazy"
+              alt="The Earth, half lit, rising over the gray horizon of the Moon" />
+            <figcaption class="shot-cap">A caption you would say out loud</figcaption>
+          </figure>
+          <div class="entry-body">
+            <span class="rank" aria-hidden="true" data-count-from="6">01</span>
+            <p class="eyebrow">The best one</p>
+            <h3 class="entry-title"><span class="sr-only">Number one: </span>Pink Carnations</h3>
+            <p class="entry-note">
+              Their ruffled petals give them a unique and detailed appearance. The soft pink color also makes them look
+              delicate and elegant.
+            </p>
+          </div>
+        </article>
+      </li>
+    </ol>
+  </main>
 
-    <!-- METHOD: how you ranked them turns a list of opinions into an argument. -->
-    <section id="method" class="method">
-      <div class="method-inner" data-reveal>
-        <p class="eyebrow">Method</p>
-        <h2 class="section-title">How I ranked these</h2>
-        <div class="method-cols">
-          <div>
-            <h3 class="method-h">What I judged on</h3>
-            <p class="section-support">
-              Two or three things, named. "Good" is not one of them.
-            </p>
+  <!-- METHOD: how you ranked them turns a list of opinions into an argument. -->
+  <section id="method" class="method">
+  </section>
+
+  <!---HONORABLE MENTIONS -->
+  <div class="method-inner" data-reveal>
+    <section id="slider">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img alt="Tailwind CSS slide example"
+            src="https://wallpapercrafter.com/desktop4/1178324-flowers-pink-lush-Ranunculus-Asian-Buttercup.jpg" class="w-full" />
+          <!-- Bottom Overlay Header (Centered & Larger) -->
+          <div
+            class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Ranunculus </h2>
+            <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
+              peaks </p>
           </div>
-          <div>
-            <h3 class="method-h">What I ignored</h3>
-            <p class="section-support">
-              The thing everyone else ranks by that you decided did not matter,
-              and why.
-            </p>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-          <div>
-            <h3 class="method-h">Where I could be wrong</h3>
-            <p class="section-support">
-              The strongest argument against your number one. Saying it makes
-              the rest more believable, not less.
-            </p>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img alt="Tailwind CSS slide example"
+            src="https://rare-gallery.com/uploads/posts/789433-Dahlias-Closeup-Pink-color.jpg" class="w-full" />
+          <!-- Bottom Overlay Header (Centered & Larger) -->
+          <div
+            class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Dahlias </h2>
+            <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
+              peaks </p>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img alt="Tailwind CSS slide example"
+            src="https://bouqs.com/blog/wp-content/uploads/2023/08/lilly-8094912_1280-min-1080x720.png" class="w-full" />
+          <!-- Bottom Overlay Header (Centered & Larger) -->
+          <div
+            class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Lilies  </h2>
+            <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
+              peaks </p>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="site-foot">
-      <div class="site-foot-inner">
-        <div>
-          <p class="site-foot-title">Your title</p>
-          <p class="section-support">Your name. Revised whenever I am wrong.</p>
-          <p class="section-support">© <span data-year>20XX</span> Your name.</p>
-        </div>
-        <div>
-          <p class="site-foot-title">Credits</p>
-          <!-- CREDITS: creator, source and license for every image. Replace
-               these six lines as you replace the photos. -->
-          <ul class="credits">
-            <li>Launch: <a href="https://images.nasa.gov/details/S69-39961">NASA, S69-39961</a>, public domain.</li>
-            <li>Spacewalk: <a href="https://images.nasa.gov/details/s65-30433">NASA, S65-30433</a>, public domain.</li>
-            <li>Free flight: <a href="https://images.nasa.gov/details/s84-27017">NASA, S84-27017</a>, public domain.</li>
-            <li>Moonwalk: <a href="https://images.nasa.gov/details/as11-40-5903">NASA, AS11-40-5903</a>, public domain.</li>
-            <li>Whole Earth: <a href="https://images.nasa.gov/details/as17-148-22727">NASA, AS17-148-22727</a>, public domain.</li>
-            <li>Earthrise: <a href="https://images.nasa.gov/details/as08-14-2383">NASA, AS08-14-2383</a>, public domain.</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
 
-    <script src="js/reveal.js"></script>
-  </body>
+
+    </footer>
+    <p class="eyebrow">Method</p>
+    <h2 class="section-title">How I ranked these</h2>
+    <div class="method-cols">
+      <div>
+        <h3 class="method-h">What I judged on</h3>
+        <p class="section-support">
+          Two or three things, named. "Good" is not one of them.
+        </p>
+      </div>
+      <div>
+        <h3 class="method-h">What I ignored</h3>
+        <p class="section-support">
+          The thing everyone else ranks by that you decided did not matter,
+          and why.
+        </p>
+      </div>
+      <div>
+        <h3 class="method-h">Where I could be wrong</h3>
+        <p class="section-support">
+          The strongest argument against your number one. Saying it makes
+          the rest more believable, not less.
+        </p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer class="site-foot">
+    <div class="site-foot-inner">
+      <div>
+        <p class="site-foot-title">Your title</p>
+        <p class="section-support">Your name. Revised whenever I am wrong.</p>
+        <p class="section-support">© <span data-year>20XX</span> Your name.</p>
+      </div>
+      <div>
+        <p class="site-foot-title">Credits</p>
+        <!-- CREDITS: creator, source and license for every image. Replace
+               these six lines as you replace the photos. -->
+        <ul class="credits">
+          <li>Launch: <a href="https://images.nasa.gov/details/S69-39961">NASA, S69-39961</a>, public domain.</li>
+          <li>Spacewalk: <a href="https://images.nasa.gov/details/s65-30433">NASA, S65-30433</a>, public domain.</li>
+          <li>Free flight: <a href="https://images.nasa.gov/details/s84-27017">NASA, S84-27017</a>, public domain.</li>
+          <li>Moonwalk: <a href="https://images.nasa.gov/details/as11-40-5903">NASA, AS11-40-5903</a>, public domain.
+          </li>
+          <li>Whole Earth: <a href="https://images.nasa.gov/details/as17-148-22727">NASA, AS17-148-22727</a>, public
+            domain.</li>
+          <li>Earthrise: <a href="https://images.nasa.gov/details/as08-14-2383">NASA, AS08-14-2383</a>, public domain.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/reveal.js"></script>
+</body>
+
 </html>
