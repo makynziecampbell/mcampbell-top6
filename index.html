@@ -13,6 +13,14 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+
+  <!--- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
   <!-- The tab icon. Redraw img/favicon.svg in your own colors. -->
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
   <!-- Your own rules go last, so they win. -->
@@ -180,95 +188,92 @@
 
   <!-- METHOD: how you ranked them turns a list of opinions into an argument. -->
   <section id="method" class="method">
+  <p class="eyebrow">Method</p>
+  <h2 class="section-title">How I ranked these</h2>
+  <div class="method-cols">
+    <div>
+      <h3 class="method-h">What I judged on</h3>
+      <p class="section-support">
+        Two or three things, named. "Good" is not one of them.
+      </p>
+    </div>
+    <div>
+      <h3 class="method-h">What I ignored</h3>
+      <p class="section-support">
+        The thing everyone else ranks by that you decided did not matter,
+        and why.
+      </p>
+    </div>
+    <div>
+      <h3 class="method-h">Where I could be wrong</h3>
+      <p class="section-support">
+        The strongest argument against your number one. Saying it makes
+        the rest more believable, not less.
+      </p>
+    </div>
+  </div>
+  </div>
   </section>
 
   <!---HONORABLE MENTIONS -->
-  <div class="method-inner" data-reveal>
-    <section id="slider">
-      <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img alt="Tailwind CSS slide example"
-            src="https://wallpapercrafter.com/desktop4/1178324-flowers-pink-lush-Ranunculus-Asian-Buttercup.jpg" class="w-full" />
-          <!-- Bottom Overlay Header (Centered & Larger) -->
-          <div
-            class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
-            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Ranunculus </h2>
-            <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
-              peaks </p>
-          </div>
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
+  <section class="list-wrap" id="slider">
+    <div class="carousel">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img alt="Tailwind CSS slide example"
+          src="https://wallpapercrafter.com/desktop4/1178324-flowers-pink-lush-Ranunculus-Asian-Buttercup.jpg"
+          class="w-full" />
+        <!-- Bottom Overlay Header (Centered & Larger) -->
+        <div
+          class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
+          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Ranunculus </h2>
+          <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
+            peaks </p>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <img alt="Tailwind CSS slide example"
-            src="https://rare-gallery.com/uploads/posts/789433-Dahlias-Closeup-Pink-color.jpg" class="w-full" />
-          <!-- Bottom Overlay Header (Centered & Larger) -->
-          <div
-            class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
-            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Dahlias </h2>
-            <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
-              peaks </p>
-          </div>
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide3" class="carousel-item relative w-full">
-          <img alt="Tailwind CSS slide example"
-            src="https://bouqs.com/blog/wp-content/uploads/2023/08/lilly-8094912_1280-min-1080x720.png" class="w-full" />
-          <!-- Bottom Overlay Header (Centered & Larger) -->
-          <div
-            class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
-            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Lilies  </h2>
-            <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
-              peaks </p>
-          </div>
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
-    </section>
-
-
-
-    </footer>
-    <p class="eyebrow">Method</p>
-    <h2 class="section-title">How I ranked these</h2>
-    <div class="method-cols">
-      <div>
-        <h3 class="method-h">What I judged on</h3>
-        <p class="section-support">
-          Two or three things, named. "Good" is not one of them.
-        </p>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img alt="Tailwind CSS slide example"
+          src="https://rare-gallery.com/uploads/posts/789433-Dahlias-Closeup-Pink-color.jpg" class="w-full" />
+        <!-- Bottom Overlay Header (Centered & Larger) -->
+        <div
+          class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
+          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Dahlias </h2>
+          <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
+            peaks </p>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
       </div>
-      <div>
-        <h3 class="method-h">What I ignored</h3>
-        <p class="section-support">
-          The thing everyone else ranks by that you decided did not matter,
-          and why.
-        </p>
-      </div>
-      <div>
-        <h3 class="method-h">Where I could be wrong</h3>
-        <p class="section-support">
-          The strongest argument against your number one. Saying it makes
-          the rest more believable, not less.
-        </p>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img alt="Tailwind CSS slide example"
+          src="https://bouqs.com/blog/wp-content/uploads/2023/08/lilly-8094912_1280-min-1080x720.png" class="w-full" />
+        <!-- Bottom Overlay Header (Centered & Larger) -->
+        <div
+          class="absolute bottom-0 inset-x-0 w-full bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12 pt-20 text-center text-white">
+          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2"> Pink Lilies </h2>
+          <p class="text-lg md:text-2xl text-gray-200 font-medium max-w-3xl mx-auto"> Explore breathtaking mountain
+            peaks </p>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
       </div>
     </div>
-  </div>
   </section>
+
+
 
   <footer class="site-foot">
     <div class="site-foot-inner">
       <div>
         <p class="site-foot-title">Your title</p>
-        <p class="section-support">Your name. Revised whenever I am wrong.</p>
+        <p class="section-support">Some web copy and CSS done by AI.</p>
         <p class="section-support">© <span data-year>20XX</span> Your name.</p>
       </div>
       <div>

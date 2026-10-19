@@ -7,10 +7,9 @@ COLORS:
 [data-theme='flowers'] {
     --color-accent: #e96d9b;
     --color-primary:#f0a6ca; 
-    --color-green: #edeec9;
+    --color-yellow: #edeec9;
     --color-coral: #ff477e;
-    --color-purple: #e1b3ff; 
-    --color-yellow: #fae588; 
+    --color-purple: #e1b3ff;  
     --color-beige: #fefae0; 
     --color-pink:  #ffacc5; 
 }
@@ -19,6 +18,12 @@ body {
     background: var(--color-beige);
 }
 
+body, div, p{
+    font-family: "Playfair Display", serif;
+}
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Abril Fatface", serif;
+}
 
 /**** HERO ****/
 /**** HERO ****/
@@ -31,7 +36,7 @@ body {
 }
 
 .hero-support {
-    color: var(--color-yellow);
+    color: var(--color-white);
     font-weight: 800;
     text-shadow: 1px 1px 3px black;
 }
